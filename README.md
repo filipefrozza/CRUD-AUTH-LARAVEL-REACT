@@ -53,7 +53,7 @@ CRUD de usuarios;
 - VERIFICAR NOS LOGS SE O CÓDIGO DE MIGRATE RODOU CORRETAMENTE
 - ACONSELHO DEPOIS DE FAZER UP UMA VEZ, PARAR OS CONTAINERS E RODAR NOVAMENTE (APÓS 5 MINUTOS UP) PARA EVITAR PROBLEMAS
 
-# códigos para rodar laravel + react na máquina local (rodar os códigos que preparam o servidor antes de iniciar)
+# códigos para rodar laravel + react sem usar DOCKER (rodar os códigos que preparam o servidor antes de iniciar)
 
 - abrir um servidor mysql porta 3306 com uma database chamada 'crud-laravel'
 - na pasta laravel rodar: php artisan serve
