@@ -34,9 +34,9 @@ CRUD de usuarios;
 
 --------------------------
 
-códigos para rodar:
+# códigos para rodar:
 
-php artisan migrate
-php artisan passport:install
-php artisan permission:create-permission-routes
-php artisan db:seed --class=UsersSeeder
+- php artisan migrate
+- php artisan passport:install
+- php artisan permission:create-permission-routes
+- php artisan db:seed --class=UsersSeeder
