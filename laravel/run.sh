@@ -1,5 +1,6 @@
 #!/bin/sh
 
+sleep 60
 php artisan migrate
 php artisan passport:install
 php artisan permission:create-permission-routes

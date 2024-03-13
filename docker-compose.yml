@@ -5,7 +5,9 @@ services:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_DATABASE: brudam-test
+      MYSQL_DATABASE: crud-laravel
+      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
     ports:
       - "3306:3306"
     volumes:
@@ -21,7 +23,6 @@ services:
       - .\\laravel:/var/www/html
     depends_on:
       - mysql
-    #entrypoint: /var/www/html/docker-entrypoint.sh
 
   react:
     build: .\\react

@@ -34,9 +34,30 @@ CRUD de usuarios;
 
 --------------------------
 
-# códigos para rodar:
+# códigos para preparar o servidor (precisa estar com o banco up tendo uma database chamada 'crud-laravel'):
 
+-> na pasta laravel
 - php artisan migrate
 - php artisan passport:install
 - php artisan permission:create-permission-routes
 - php artisan db:seed --class=UsersSeeder
+
+-> na pasta react
+- npm install
+
+# códigos para o docker
+
+- docker-compose build
+- docker-compose up
+
+- VERIFICAR NOS LOGS SE O CÓDIGO DE MIGRATE RODOU CORRETAMENTE
+- ACONSELHO DEPOIS DE FAZER UP UMA VEZ, PARAR OS CONTAINERS E RODAR NOVAMENTE (APÓS 5 MINUTOS UP) PARA EVITAR PROBLEMAS
+
+# códigos para rodar laravel + react na máquina local (rodar os códigos que preparam o servidor antes de iniciar)
+
+- abrir um servidor mysql porta 3306 com uma database chamada 'crud-laravel'
+- na pasta laravel rodar: php artisan serve
+- na pasta react rodar: npm start
+
+- laravel irá rodar na porta 8000
+- react irá rodar na porta 3000
